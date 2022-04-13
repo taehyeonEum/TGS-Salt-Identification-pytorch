@@ -122,31 +122,3 @@ class UNet(Module):
         
         #print('after mapping', map.shape)
         return map
-
-
-# %%
-#Testing Model
-ex = torch.Tensor(1, 3, 128, 128)
-testing_model = UNet()
-testing_model(ex)
-
-# %% [markdown]
-# <h5><b><u>centercorp comprehension
-
-# %%
-temp = torch.Tensor(5, 5)
-for i in range(5):
-    for j in range(5):
-        temp[i][j] = i*j
-print(temp)
-crop = CenterCrop([3, 4])(temp)
-print(crop)
-
-# %% [markdown]
-# <h5><u><b> F.interpolation comprehension
-
-# %%
-temp = torch.Tensor([[[[0,1,0], [1,1,1,], [0,1,0]]]])
-print(F.interpolate(temp, (7, 7)))
-
-
