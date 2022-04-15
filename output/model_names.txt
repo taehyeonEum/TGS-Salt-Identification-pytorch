@@ -1,1 +1,2 @@
-
+trained model will be saved...
+output/unet#0_cost:0.2682.pth
