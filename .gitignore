@@ -1,2 +1,4 @@
-*.ipynb
+pyimagesearch/*.ipynb
 *.pyc
+output/*.pth
+output/*.png
